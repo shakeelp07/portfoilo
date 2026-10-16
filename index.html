@@ -3,235 +3,557 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Portfolio - Pathan Shakeel khan</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <style>
-      .home-text h3 {
-        text-align: center; 
-      }
-    </style>
+    <meta
+      name="description"
+      content="Pathan Shakeel Khan — Computer Science student specializing in Cyber Security. Full-stack developer building secure and reliable software."
+    />
+    <meta name="theme-color" content="#0a0e14" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pathan Shakeel Khan | Cyber Security & Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Pathan Shakeel Khan — Cyber Security student, full-stack developer, and penetration testing enthusiast."
+    />
+    <meta property="og:image" content="images/profile.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Pathan Shakeel Khan | Cyber Security & Full-Stack Developer</title>
+    <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/icon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-        <div class="header-content">
-          <h1><b>PATHAN SHAKEEL KHAN</b></h1>
-          <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About </a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact Me</a></li>
-            </ul>
-          </nav>
-        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.36 1.11 2.94.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.2 9.2 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.58.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+        />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.84v1.98h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V23h-4v-6.44c0-1.54-.03-3.52-2.14-3.52-2.14 0-2.47 1.67-2.47 3.4V23h-4V8.5z"
+        />
+      </symbol>
+      <symbol id="icon-envelope" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 9.17L20.59 6H3.41L12 13.17zM3 18h18V8.83l-8.3 7.24a1 1 0 0 1-1.4 0L3 8.83V18z"
+        />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8.7 15.9 4.8 12l3.9-3.9 1.4 1.4L7.6 12l2.5 2.5-1.4 1.4zm6.6 0-1.4-1.4L16.4 12l-2.5-2.5 1.4-1.4L19.2 12l-3.9 3.9zM14.3 4 9.7 20h-2l4.6-16h2z" />
+      </symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2 2 7l10 5 10-5-10-5zm0 8.5L4.5 7.5 12 4l7.5 3.5L12 10.5zm-8 3.5 8 4.5 8-4.5v2.5l-8 4.5-8-4.5V14zm0 4 8 4.5 8-4.5v2.5l-8 4.5-8-4.5V18z" />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2 4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18 6 2.25v4.66c0 4.01-2.68 7.77-6 8.87-3.32-1.1-6-4.86-6-8.87V6.43l6-2.25z" />
+      </symbol>
+      <symbol id="icon-tools" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M22.7 19.3 14.4 11l2.3-2.3a3.5 3.5 0 0 0-4.95-4.95L9.4 6.05 3.7.35a1 1 0 0 0-1.4 1.4l5.7 5.7-2.3 2.3a3.5 3.5 0 0 0 4.95 4.95l2.3-2.3 8.3 8.3a1 1 0 0 0 1.4-1.4l-1.65-1.65z"
+        />
+      </symbol>
+      <symbol id="icon-people" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+        />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M9.55 17.2 4.35 12l1.4-1.42 3.8 3.8 8.7-8.72 1.42 1.42-10.12 10.12z" />
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
+    <div class="offline-badge" id="offline-badge" hidden aria-live="polite">Offline mode</div>
+
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Pathan Shakeel Khan, scroll to top">
+          <span class="brand__avatar">
+            <img src="images/profile.jpg" alt="" width="40" height="40" decoding="async" />
+          </span>
+          <span class="brand__name">Pathan Shakeel Khan</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <section id="home">
-      <br /><br />
-      <div class="container home-section">
-        <div class="home-content">
-          <div class="home-image">
-  
-          </div>
-          <div class="home-text">
-            <h2>Welcome to My Personal Portfolio Website</h2>
-            <br /><br />
-            <h3>Hi, I'm <span class="Shakeel">Pathan Shakeel khan</span>From India.</h3>
-            <div class="social-icons-and-button">
-              <div class="social-icons">
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/shakeelp07"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container about-section">
-        <div class="about-content">
-          <h2 style="color: rgb(0, 0, 0)">About Me</h2>
-          <br />
-          <p style="color: aliceblue">
-            I am an aspiring Computer Science Engineering student at SRM AP, Amaravathi, with a strong passion for software development. Proficient in C, C++, Python, HTML, CSS, JavaScript, Bootstrap,
-            React, Node.js, PHP, SQL.I,ve designed Smart parking System using C++ OOP. Beyond coding, my interests in
-            sports.
-          </p>
-        </div>
-        <div class="about-image">
-          <img src="/images/3.png" alt="About Me Picture" />
-        </div>
-      </div>
-    </section>
-    <section id="education">
-      <div class="container">
-        <h2>Education Details</h2>
-        <br /><br /><br />
-        <table>
-          <tr>
-            <th>Qualification</th>
-            <th>Institution</th>
-            <th>Location</th>
-            <th>Year</th>
-            <th>Details</th>
-          </tr>
-          <tr>
-            <td>Undergraduate (CSE)</td>
-            <td>SRM AP</td>
-            <td>Amaravathi, India</td>
-            <td>Expected 2026</td>
-            <td>CGPA: 8.1</td>
-          </tr>
-          <tr>
-            <td>Intermediate</td>
-            <td>Sri Chaitanya</td>
-            <td>Andhra Pradesh, India</td>
-            <td>2022</td>
-            <td>Percentage: 92.2%</td>
-          </tr>
-          <tr>
-            <td>10th (SSC)</td>
-            <td>Indian Springs High School</td>
-            <td>Andhra Pradesh, India</td>
-            <td>2020</td>
-            <td>Percentage: 98%</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <h2>My Skills</h2>
-        <br /><br />
-        <div class="skills-container">
-          <div class="skills-left">
-            <div class="soft">
-              <h3 style="text-align: center; background-color: aliceblue">Technical Skills</h3>
-              <div class="skills" style="background-color: rgba(255, 255, 255, 0.297)">
-                <div class="skill">
-                  <i class="fab fa-cuttlefish"></i>
-                  <p>C/C++</p>
-                </div>
-                <div class="skill">
-                  <i class="fab fa-python"></i>
-                  <p>Python</p>
-                </div>
-                <div class="skill">
-                  <i class="fab fa-html5"></i>
-                  <p>HTML</p>
-                </div>
-                <div class="skill">
-                  <i class="fab fa-css3-alt"></i>
-                  <p>CSS</p>
-                </div>
-                <div class="skill">
-                  <i class="fab fa-js-square"></i>
-                  <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                  <i class="fab fa-bootstrap"></i>
-                  <p>Bootstrap</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-right">
-            <div class="soft">
-              <h3 style="text-align: center; background-color: aliceblue">Soft Skills</h3>
-              <div class="skills" style="background-color: rgba(255, 255, 255, 0.297)">
-                <div class="skill">
-                  <i class="fas fa-comments"></i>
-                  <p>Communication</p>
-                </div>
-                <div class="skill">
-                  <i class="fas fa-users"></i>
-                  <p>Teamwork</p>
-                </div>
-                <div class="skill">
-                  <i class="fas fa-lightbulb"></i>
-                  <p>Problem Solving</p>
-                </div>
-                <div class="skill">
-                  <i class="fas fa-tasks"></i>
-                  <p>Project Management</p>
-                </div>
-                <div class="skill">
-                  <i class="fas fa-brain"></i>
-                  <p>Critical Thinking</p>
-                </div>
-              </div>
-            </div>
-            <br />
-            <div class="soft">
-              <h3 style="text-align: center; background-color: aliceblue">Creative Skills</h3>
-              <div class="skills" style="background-color: rgba(255, 255, 255, 0.297)">
-                <div class="skill">
-                  <i class="fas fa-video"></i>
-                  <p>Video Editing</p>
-                </div>
-                <div class="skill">
-                  <i class="fas fa-camera"></i>
-                  <p>Photography</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <br /><br />
-        <div class="project">
-          <h3>E-commerce Management System (HTML, CSS, JavaScript, PHP, SQL)</h3>
-          <p>
-            An E-commerce Management System is a web application that allows businesses to manage their online sales operations efficiently. It typically consists of several components including a
-            front-end for user interaction, a back-end for managing products and orders, and a database to store information securely.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Smart parking System (C++ Object Oriented Programming)</h3>
-          <p>Engineered a robust Smart parking system in C++.</p>
-        </div>
-      </div>
-    </section>
 
-    <section id="contact">
-      <div class="form-section">
+    <main id="main">
+      <section id="home" class="section hero" aria-labelledby="hero-heading">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero__inner reveal">
+          <div class="hero__media">
+            <div class="profile-frame">
+              <picture>
+                <source srcset="images/profile.webp" type="image/webp" />
+                <img
+                  src="images/profile.jpg"
+                  alt="Portrait of Pathan Shakeel Khan"
+                  width="320"
+                  height="320"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="hero__content">
+            <p class="section-eyebrow">Welcome</p>
+            <h1 id="hero-heading" class="hero__title">Pathan Shakeel Khan</h1>
+            <p class="hero__tagline">
+              Computer Science student specializing in Cyber Security, building secure and reliable software.
+            </p>
+            <p class="hero__role" aria-live="polite">
+              <span class="hero__role-label">Focus:</span>
+              <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a href="resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+            </div>
+            <div class="hero__social">
+              <a href="https://github.com/shakeelp07" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/shakeel-khan-327177291"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-heading">
         <div class="container">
-          <h2>Contact Me</h2>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="a10a5be3-1168-4f7b-bc7f-3544314e4131" />
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" id="submit-button">
-              <span class="button-text">Submit</span>
-              
-              <span class="spinner" aria-hidden="true"></span>
-              <span class="tick" aria-hidden="true">&#10003;</span>
-            </button>
-          </form>
+          <header class="section-header reveal">
+            <p class="section-eyebrow">About</p>
+            <h2 id="about-heading">About Me</h2>
+          </header>
+          <div class="about-grid reveal">
+            <div class="about-grid__text">
+              <p>
+                Computer Science student specializing in Cyber Security with hands-on experience in full-stack and
+                secure application development. Skilled in Python, JavaScript, MERN stack, REST APIs, web security,
+                vulnerability assessment, and penetration testing. Strong analytical and problem-solving abilities.
+                Seeking an entry-level role in Software Engineering, Cyber Security, or Full-Stack Development.
+              </p>
+            </div>
+            <div class="about-grid__media">
+              <div class="profile-frame profile-frame--small">
+                <picture>
+                  <source srcset="images/profile.webp" type="image/webp" />
+                  <img
+                    src="images/profile.jpg"
+                    alt="Portrait of Pathan Shakeel Khan"
+                    width="240"
+                    height="240"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Pathan shakeel khan. All rights reserved.</p>
+      <section id="experience" class="section section--alt" aria-labelledby="experience-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Experience</p>
+            <h2 id="experience-heading">Experience</h2>
+          </header>
+          <ol class="timeline reveal">
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header>
+                  <h3>Cyber Security Analyst Intern</h3>
+                  <p class="timeline__meta">VHASS Foundation and Softwares Pvt. Ltd. · 2023</p>
+                </header>
+                <ul>
+                  <li>
+                    Performed web penetration testing and bug-bounty style assessments, identifying and reporting
+                    exploitable vulnerabilities.
+                  </li>
+                  <li>
+                    Applied offensive security techniques including injection, XSS, and authentication bypass testing.
+                  </li>
+                  <li>Completed the internship and received a certificate of completion.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header>
+                  <h3>Full Stack Development Intern</h3>
+                  <p class="timeline__meta">Edunet Foundation (Remote) · 2023</p>
+                </header>
+                <ul>
+                  <li>
+                    Completed structured training in front-end and back-end web development with hands-on application
+                    development.
+                  </li>
+                  <li>
+                    Built responsive interfaces and implemented server-side logic and REST-based functionality.
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Projects</p>
+            <h2 id="projects-heading">Projects</h2>
+          </header>
+          <div class="card-grid reveal">
+            <article class="project-card">
+              <header>
+                <h3>SECUREFILE: Hybrid Cryptographic Binding Architecture</h3>
+                <p class="project-card__year">2026</p>
+              </header>
+              <ul class="project-card__bullets">
+                <li>
+                  Secure offline file storage system using hybrid cryptography for confidentiality, authentication,
+                  and tamper-resistant data protection.
+                </li>
+                <li>
+                  AES-256-GCM for file encryption, ASCON-128 for metadata integrity, and PBKDF2-based key derivation
+                  for password security.
+                </li>
+                <li>
+                  Authentication and attack-resistant mechanisms for secure offline file access and integrity
+                  verification.
+                </li>
+              </ul>
+              <div class="tag-list" aria-label="Technologies">
+                <span class="tag">Python</span>
+                <span class="tag">AES-256-GCM</span>
+                <span class="tag">ASCON-128</span>
+                <span class="tag">PBKDF2</span>
+                <span class="tag">RSA-3072</span>
+              </div>
+              <!-- TODO: Replace with SECUREFILE repository URL -->
+              <a href="#" class="btn btn--sm btn--ghost project-repo link-disabled" aria-disabled="true">GitHub</a>
+            </article>
+            <article class="project-card">
+              <header>
+                <h3>E-Waste Pickup Management Platform</h3>
+                <p class="project-card__year">2025</p>
+              </header>
+              <ul class="project-card__bullets">
+                <li>Web platform to submit and track e-waste pickup requests online.</li>
+                <li>
+                  Backend in Node.js, Express.js, MongoDB managing users, requests, agents, and request status.
+                </li>
+                <li>
+                  Admin workflow to review requests, assign pickup agents, and update status from pending to completed.
+                </li>
+              </ul>
+              <div class="tag-list" aria-label="Technologies">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <!-- TODO: Replace with E-Waste project repository URL -->
+              <a href="#" class="btn btn--sm btn--ghost project-repo link-disabled" aria-disabled="true">GitHub</a>
+            </article>
+            <article class="project-card">
+              <header>
+                <h3>Hotel Booking Management System</h3>
+                <!-- TODO: add project year when confirmed -->
+              </header>
+              <ul class="project-card__bullets">
+                <li>
+                  Responsive web application for browsing rooms and submitting booking requests, built with HTML, CSS,
+                  and JavaScript.
+                </li>
+                <li>
+                  PHP backend to handle form submissions, validate user input, and process reservation data on the
+                  server.
+                </li>
+                <li>
+                  Structured workflow for customers to place bookings and for administrators to review and manage
+                  reservation records.
+                </li>
+              </ul>
+              <div class="tag-list" aria-label="Technologies">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+              <!-- TODO: Replace with Hotel Booking project repository URL -->
+              <a href="#" class="btn btn--sm btn--ghost project-repo link-disabled" aria-disabled="true">GitHub</a>
+            </article>
+            <article class="project-card project-card--wip">
+              <span class="badge-wip" aria-hidden="true">In Progress</span>
+              <header>
+                <h3>Currently Building</h3>
+              </header>
+              <!-- TODO: replace when ready -->
+              <p class="project-card__placeholder">New project in development. Details coming soon.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt" aria-labelledby="skills-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Skills</p>
+            <h2 id="skills-heading">Skills</h2>
+          </header>
+          <div class="skills-grid reveal">
+            <div class="skill-group">
+              <h3><svg class="icon icon--sm" aria-hidden="true"><use href="#icon-code"></use></svg> Languages</h3>
+              <div class="chip-list">
+                <span class="chip">Python</span>
+                <span class="chip">Java</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">SQL (MySQL)</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3><svg class="icon icon--sm" aria-hidden="true"><use href="#icon-layers"></use></svg> Frameworks</h3>
+              <div class="chip-list">
+                <span class="chip">React.js</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Express.js</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3><svg class="icon icon--sm" aria-hidden="true"><use href="#icon-shield"></use></svg> Cyber Security</h3>
+              <div class="chip-list">
+                <span class="chip">Web Security</span>
+                <span class="chip">Penetration Testing</span>
+                <span class="chip">Vulnerability Assessment</span>
+                <span class="chip">Cryptography</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3><svg class="icon icon--sm" aria-hidden="true"><use href="#icon-tools"></use></svg> Tools</h3>
+              <div class="chip-list">
+                <span class="chip">Git</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">Cursor</span>
+                <span class="chip">AI-assisted Development Tools</span>
+              </div>
+            </div>
+            <div class="skill-group skill-group--wide">
+              <h3><svg class="icon icon--sm" aria-hidden="true"><use href="#icon-people"></use></svg> Soft skills</h3>
+              <div class="chip-list">
+                <span class="chip">Critical Thinking</span>
+                <span class="chip">Analytical Reasoning</span>
+                <span class="chip">Communication</span>
+                <span class="chip">Project Planning</span>
+                <span class="chip">Teamwork</span>
+                <span class="chip">Problem Solving</span>
+                <span class="chip">Time Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section" aria-labelledby="certifications-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Certifications</p>
+            <h2 id="certifications-heading">Certifications</h2>
+          </header>
+          <div class="card-grid card-grid--certs reveal">
+            <article class="cert-card">
+              <h3>Ransomware Techniques (Short Course, Certificate of Achievement)</h3>
+              <p class="cert-card__issuer">IT Masters in partnership with Charles Sturt University</p>
+              <p class="cert-card__detail">Completed September 11, 2026 · Grade: 78.00 · Lecturer: Jeremy Koster</p>
+              <a href="certificates/ransomware-techniques.pdf" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">
+                View Certificate
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-external"></use></svg>
+              </a>
+            </article>
+            <article class="cert-card">
+              <h3>Red Hat Certified Developer in Cloud-native Applications</h3>
+              <p class="cert-card__issuer">Red Hat · May 2026</p>
+              <p class="cert-card__id">ID: 260-060-363</p>
+            </article>
+            <article class="cert-card">
+              <h3>Certificate of Participation, ICETCI 2026</h3>
+              <p class="cert-card__issuer">
+                Mahindra University &amp; Ecole Centrale School of Engineering, Hyderabad · Aug 2026
+              </p>
+            </article>
+            <article class="cert-card">
+              <h3>Ethical Hacking, Cyber Security &amp; Web Penetration Testing</h3>
+              <p class="cert-card__issuer">VHASS Softwares Pvt. Ltd. · Sep 2025</p>
+              <p class="cert-card__detail">30-hour course</p>
+            </article>
+            <article class="cert-card">
+              <h3>Full Stack Web Development</h3>
+              <p class="cert-card__issuer">Edunet Foundation, IBM SkillsBuild &amp; SRM University AP · Jun–Aug 2025</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section section--alt" aria-labelledby="education-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Education</p>
+            <h2 id="education-heading">Education</h2>
+          </header>
+          <div class="edu-list reveal">
+            <article class="edu-card">
+              <div class="edu-card__head">
+                <h3>B.Tech in Cyber Security</h3>
+                <span class="marks-badge">CGPA: 7.2 / 10</span>
+              </div>
+              <p class="edu-card__school">SRM University AP, Amaravati</p>
+              <p class="edu-card__dates">Apr 2023 – Expected 2027 · 3rd year</p>
+            </article>
+            <article class="edu-card">
+              <div class="edu-card__head">
+                <h3>Intermediate (MPC)</h3>
+                <span class="marks-badge">92.2%</span>
+              </div>
+              <p class="edu-card__school">Sri Chaitanya Junior College, Lakshmipuram</p>
+              <p class="edu-card__dates">Completed Apr 2023</p>
+              <!-- TODO: confirm year (old site said 2022) -->
+            </article>
+            <article class="edu-card">
+              <div class="edu-card__head">
+                <h3>10th (SSC)</h3>
+                <span class="marks-badge">98%</span>
+              </div>
+              <p class="edu-card__school">Indian Springs High School, Andhra Pradesh</p>
+              <p class="edu-card__dates">2020</p>
+              <!-- TODO: confirm year and marks -->
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="container contact-layout reveal">
+          <div class="contact-info">
+            <header class="section-header section-header--left">
+              <p class="section-eyebrow">Contact</p>
+              <h2 id="contact-heading">Contact</h2>
+            </header>
+            <p>Open to internships and entry-level roles in software engineering, cyber security, and full-stack development.</p>
+            <ul class="contact-links">
+              <li>
+                <!-- TODO: Confirm exact SRM email address from resume (PDF may contain a space), then set href="mailto:..." -->
+                <span class="contact-links__static">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-envelope"></use></svg>
+                  <span>SRM email — confirm from resume (TODO)</span>
+                </span>
+              </li>
+              <li>
+                <a href="https://github.com/shakeelp07" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-github"></use></svg>
+                  <span>github.com/shakeelp07</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/shakeel-khan-327177291" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form-wrap">
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+              <input type="hidden" name="access_key" value="a10a5be3-1168-4f7b-bc7f-3544314e4131" />
+              <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              <button type="submit" id="submit-button" class="btn btn--primary btn--block">
+                <span class="button-text">Send message</span>
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="tick" aria-hidden="true"><svg class="icon icon--sm"><use href="#icon-check"></use></svg></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Pathan Shakeel Khan.</p>
+        <div class="footer-social">
+          <a href="https://github.com/shakeelp07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shakeel-khan-327177291"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+          </a>
+        </div>
       </div>
     </footer>
 
